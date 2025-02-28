@@ -1,0 +1,180 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #2e0035;
+    overflow-x: auto;
+    overflow-x: hidden;
+    min-height: 500vh;
+    color: white;
+
+
+}
+
+.navbar{
+    top: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    max-width: 1100px;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 50px; 
+    width: 90%;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #a445ed
+}
+
+h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    
+
+}
+ 
+.content {
+    max-width: 80%;
+    min-height: 100vh;
+    margin: 50px auto;
+    width: 50%;
+    background: rgba(0, 0, 0, 0,6);
+    padding: 20px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+table {
+    table-layout: auto;
+    border-collapse: collapse;
+    text-align: center;
+    width: 50% ;
+    max-width: 100%;
+    margin: 10px auto;
+    margin-top: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    border-spacing: 3px; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0,1);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+table a {
+    color: rgb(221, 135, 255); /* Change link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    padding: 1px;
+    display: inline-block;
+    
+}
+
+th {
+    height: 20px;
+    background-color: rgb(133, 0, 0);
+    color: white;
+    font-size: 1.1em;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    white-space: nowrap; /* Prevents content from breaking into multiple lines */
+    
+}
+
+tr:hover {background-color: rgb(169, 94, 94);}
+
+td {
+    background: rgba(139, 0, 0, 0.1); /* Light Red */
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    text-align: center;
+    word-break: break-word;
+    white-space: nowrap;
+}
+
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Center Content & Improve Layout */
+.content {
+    max-width: 90%; /* Keeps everything neat and not too wide */
+    margin: 50px auto; /* Centers the section */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+
+    
+}
+
+
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    background: rgba(191, 149, 149, 0.253);
+    color: white;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.683); /* Makes it more visible */
+    font-size: 1em;
+    font-family: fantasy;
+    text-align: center;
+}
+
+
+input[type="submit"] {
+    background-color: rgb(180, 20, 52);
+    color: rgba(255, 255, 255, 0.912);
+    border: none;
+    padding: 3px 5px;
+    font-size: 1em;
+    font-family: cursive;
+    border-radius: 20px;
+    cursor: pointer;
+    gap: 50px;
+}
+input[type="submit"]:hover {
+    background-color: darkred;
+}
+
+@media (max-width: 900px) {
+    .table-container {
+        width: 100%;
+        overflow-x: scroll;
+    }
+    table {
+        width: 100%;
+        overflow-x: auto;
+    }
+}

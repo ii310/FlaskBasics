@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Navbar test</title>
+    <link rel="preload" href="{{ url_for('static', filename='images/background.jpg') }}" as="image">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    {% block head %} {% endblock %}
+</head>
+<body>
+    <div class="container">
+        
+
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <span>iKnowTodo</span>
+        </div>
+        <div class="nav-links">
+            <a herf="#" class="sign in">Sign in</a>
+        </div>
+    </nav>
+    {% block body %} {% endblock %}
+    
+</body>
+</html>
